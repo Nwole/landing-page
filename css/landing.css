@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+
+} */
+.upper-container{
+    width: 100%;
+    height: 120vh;
+    background-color: #063;
+    color: #ffffff;
+}
+.upper-container > header > nav > ul{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+.upper-container > header > nav > ul > li{
+    margin: 5% 2%;
+    color: #ffffff;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+.upper-container > header > nav > ul > li:first-child{
+    margin-right: auto;
+    font-size: 1.5em;
+}
+.hero-section{
+    width: 80%;
+    margin: 10% auto 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-section > .left-section{
+    width: 40%;
+}
+.hero-section > .left-section hgroup{
+    margin: 0%;
+}
+.hero-section > .left-section hgroup > h1{
+    font-size: 3em;
+    margin: 0%;
+}
+.hero-section > .left-section hgroup > h2, h2{
+    font-size: 2em;
+    margin: 4% 0;
+}
+.hero-section > .left-section p{
+    font-size: 1.2em;
+    margin: 4% 0;
+}
+.hero-section > .right-section{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+}
+.hero-section > .right-section > .card{
+    background-color: #fff;
+    border-radius: 5%;
+    width: 35%;
+    height: 15em;
+    margin: 5% 0 10% 10%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+.hero-section > .right-section > .card:nth-of-type(odd){
+    position: relative;
+    top: 10%;
+}
+.hero-section > .right-section > .card > img{
+    width: 60%;
+    align-self: center;
+}
+.hero-section > .right-section > .card > h3{
+    margin-left: 5%;
+}
+.hero-section > .right-section > .card > p{
+    font-size: 0.8em;
+    opacity: 0.7;
+    margin-left: 5%;
+}
+button{
+    width: 45%;
+    height: 12.5%;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: rgba(255, 60, 0, 0.91);
+    border: none;
+    border-radius: 10% / 15%;
+    cursor: pointer;
+}
+
+
+@media  screen and (min-width: 200px)
+and (max-width: 900px) {
+    button{
+        width: 75%;
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    .hero-section > .right-section > .card{
+    background-color: #fff;
+    border-radius: 5%;
+    width: 100%;
+    height: 15em;
+    margin: 10% 0 0 5%;
+}
+
+.hero-section > .right-section > .card:nth-of-type(even){
+    display: none;
+}
+}
